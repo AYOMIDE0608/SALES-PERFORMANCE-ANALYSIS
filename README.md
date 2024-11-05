@@ -16,3 +16,14 @@ The primary source of Data used here is an Excel file,which i had to convert to 
 was provided by INCUBATOR HUB.
 
 ### TOOLS USED
+- Microsoft Excel [Download Here](https://www.microsoft.com)
+  1. For Data cleaning 
+  2. For Analysis
+  3. For Visualiation
+- SQL - Structured Query Language [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+  1. For Querying of Data
+- Power BI [Download Here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
+  1. For Data Visualiation
+ 
+
+ ### DATA CLEANING AND PREPARATION    

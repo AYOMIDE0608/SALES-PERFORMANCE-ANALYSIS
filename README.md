@@ -109,7 +109,22 @@ of the DAX epressions used in POWER BI during my analysis.
 
 ### DATA VISUALIATION
 
+![Screenshot (5)](https://github.com/user-attachments/assets/d3e3d688-f5a4-4f90-8728-6cecad0e2666)
 
+
+![Screenshot (15)](https://github.com/user-attachments/assets/91a25907-6091-43b5-b4e5-ffa4501d62ba)
+
+
+![Screenshot (14)](https://github.com/user-attachments/assets/68a0306e-66ba-4a55-ac26-5a1d09166888)
+
+
+![Screenshot (13)](https://github.com/user-attachments/assets/47857509-4954-49e6-bd54-721b47c4e1e1)
+
+
+![Screenshot (12)](https://github.com/user-attachments/assets/7c2e5400-ff4b-4f9c-bc8e-500d205411fd)
+
+
+![Screenshot (11)](https://github.com/user-attachments/assets/e8c033aa-cd27-4b24-9278-266c277af7b5)
 
 
 

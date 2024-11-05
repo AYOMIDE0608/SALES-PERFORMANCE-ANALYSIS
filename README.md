@@ -4,6 +4,21 @@
 
 ### PROJECT TITLE: SALES PERFORMANCE ANALYSIS
 
+[PROJECT OVERVIEW](#project-overview)
+
+[DATA SOURCES](#data-sources)
+
+[TOOLS USED](#tools-used)
+
+[DATA CLEANING AND PREPARATION](#data-cleaning-and-preparation)
+
+[EXPLORATORY DATA ANALYSIS](#exploratory-data-analysis)
+
+[ DATA ANALYSIS](#data-analysis)
+
+[DATA VISUALIATION](#data-visualiation)
+
+
 
 ### PROJECT OVERVIEW
 This Data Analysis project aims to analyzing the sales performance of a retail store over two years.
@@ -125,6 +140,9 @@ of the DAX epressions used in POWER BI during my analysis.
 
 
 ![Screenshot (11)](https://github.com/user-attachments/assets/e8c033aa-cd27-4b24-9278-266c277af7b5)
+
+
+###
 
 
 

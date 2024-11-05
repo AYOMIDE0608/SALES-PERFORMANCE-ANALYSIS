@@ -1,5 +1,6 @@
 # SALES REPORT
- An analysis was done on this sales report of a retail store to find out its sales performance.  Key insights such as top-selling products, regional  performance, and monthly sales trends is shown with Microsoft Excel and SQL  . An interactive Power BI  dashboard is also represented here that highlights these findings.
+ An analysis was done on this sales report of a retail store to find out its sales performance.  Key insights such as top-selling products, regional  performance, and monthly sales trends is shown with Microsoft 
+ Excel and SQL  . An interactive Power BI  dashboard is also represented here that highlights these findings.
 
 ### PROJECT TITLE: SALES PERFORMANCE ANALYSIS
 
@@ -26,4 +27,78 @@ was provided by INCUBATOR HUB.
   1. For Data Visualiation
  
 
- ### DATA CLEANING AND PREPARATION    
+ ### DATA CLEANING AND PREPARATION  
+ In the initial phase of the Data Cleaning and preparations,I performed the following action;
+ 1. Data loading and inspection
+ 2. Conversion of dataset to tables
+ 3. Removal of duplicates 
+ 4. Data cleaning and formatting
+
+ ### EXPLORATORY DATA ANALYSIS
+ EDA involved the exploring of the Data to answer some questions about the Data such as;
+  - What are the top-selling products
+  - What is the regional performance
+  - What is the monthly sales trends
+
+### DATA ANALYSIS
+This is where I include some basic functions used in Excel, basic lines of code and queries used in SQL and some 
+of the DAX epressions used in POWER BI during my analysis.
+1. Excel
+   ```Excel
+   =[@UnitPrice]*[@Quantity]
+   ```
+3. SQL;
+ ```SQL
+   SELECT PRODUCT, SUM(Revenue) AS TOTALSALES
+   FROM [dbo].[LITA Capstone Dataset]
+   GROUP BY PRODUCT ORDER BY 2 DESC
+ ```
+ ```SQL
+   SELECT PRODUCT,SUM(QUANTITY*UNITPRICE)
+   AS REVENUE FROM[dbo].[LITA Capstone Dataset]
+   GROUP BY PRODUCT
+```
+```SQL
+  SELECT TOP 5 CUSTOMER_ID,
+  SUM(REVENUE) AS TOTALPURCHASE
+  FROM [dbo].[LITA Capstone Dataset]
+  GROUP BY CUSTOMER_ID
+  ORDER BY TOTALPURCHASE DESC
+```
+```SQL
+  SELECT PRODUCT FROM[dbo].[LITA Capstone Dataset]
+  GROUP BY PRODUCT 
+  HAVING MAX(OrderDate)<
+  DATEADD(QUARTER,-1,GETDATE())
+```
+```SQL
+  SELECT REGION,COUNT (*) AS REGION_SALES,
+  (COUNT(*)*100.0/(SELECT COUNT(*)
+  FROM[dbo].[LITA Capstone Dataset])) AS
+  SALES_PERCENTAGE FROM [dbo].[LITA Capstone Dataset]
+  GROUP BY REGION
+```
+```SQL
+  SELECT REGION,COUNT(ORDERID) AS NUMBEROFTRANSACTIONS
+  FROM[dbo].[LITA Capstone Dataset]
+  GROUP BY REGION
+```
+```SQL
+  SELECT TOP 1 PRODUCT, SUM(REVENUE) AS TOTALSALES
+  FROM [dbo].[LITA Capstone Dataset]
+  GROUP BY Product
+  ORDER BY TOTALSALES DESC
+```
+```SQL
+  SELECT MONTH (ORDERDATE) AS MONTH,
+  SUM (REVENUE) AS MONTHLYSALES
+  FROM[dbo].[LITA Capstone Dataset]
+  WHERE YEAR (OrderDate) = YEAR(GETDATE())
+  GROUP BY MONTH (ORDERDATE)
+```
+
+
+
+
+
+ 

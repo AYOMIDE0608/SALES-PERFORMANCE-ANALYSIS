@@ -44,20 +44,24 @@ was provided by INCUBATOR HUB.
 This is where I include some basic functions used in Excel, basic lines of code and queries used in SQL and some 
 of the DAX epressions used in POWER BI during my analysis.
 1. Excel
+   1. Revenue
    ```Excel
    =[@UnitPrice]*[@Quantity]
    ```
 3. SQL;
+   1. TOTAL SALES FOR PRODUCT CATEGORY
  ```SQL
    SELECT PRODUCT, SUM(Revenue) AS TOTALSALES
    FROM [dbo].[LITA Capstone Dataset]
    GROUP BY PRODUCT ORDER BY 2 DESC
  ```
+   2. TOTAL REVENUE PER PRODUCT
  ```SQL
-   SELECT PRODUCT,SUM(QUANTITY*UNITPRICE)
-   AS REVENUE FROM[dbo].[LITA Capstone Dataset]
-   GROUP BY PRODUCT
-```
+    SELECT PRODUCT,SUM(QUANTITY*UNITPRICE)
+    AS REVENUE FROM[dbo].[LITA Capstone Dataset]
+    GROUP BY PRODUCT
+ ```
+  3. TOP 5 BY PURCHASE AMOUNT
 ```SQL
   SELECT TOP 5 CUSTOMER_ID,
   SUM(REVENUE) AS TOTALPURCHASE
@@ -65,12 +69,14 @@ of the DAX epressions used in POWER BI during my analysis.
   GROUP BY CUSTOMER_ID
   ORDER BY TOTALPURCHASE DESC
 ```
+  4. PRODUCTS WITH NO SALE
 ```SQL
   SELECT PRODUCT FROM[dbo].[LITA Capstone Dataset]
   GROUP BY PRODUCT 
   HAVING MAX(OrderDate)<
   DATEADD(QUARTER,-1,GETDATE())
 ```
+  5. PERCENTAGE OF TOTAL SALES FOR  EACH REGION
 ```SQL
   SELECT REGION,COUNT (*) AS REGION_SALES,
   (COUNT(*)*100.0/(SELECT COUNT(*)
@@ -78,17 +84,20 @@ of the DAX epressions used in POWER BI during my analysis.
   SALES_PERCENTAGE FROM [dbo].[LITA Capstone Dataset]
   GROUP BY REGION
 ```
-```SQL
+   6. Number of sales transaction in each region 
+ ```SQL
   SELECT REGION,COUNT(ORDERID) AS NUMBEROFTRANSACTIONS
   FROM[dbo].[LITA Capstone Dataset]
   GROUP BY REGION
 ```
+  7. Highest selling product by sales value
 ```SQL
   SELECT TOP 1 PRODUCT, SUM(REVENUE) AS TOTALSALES
   FROM [dbo].[LITA Capstone Dataset]
   GROUP BY Product
   ORDER BY TOTALSALES DESC
 ```
+  8. Monthly sales total for the current year
 ```SQL
   SELECT MONTH (ORDERDATE) AS MONTH,
   SUM (REVENUE) AS MONTHLYSALES

@@ -16,7 +16,7 @@
 
 [ DATA ANALYSIS](#data-analysis)
 
-[DATA VISUALIATION](#data-visualiation)
+[DATA VISUALIZATION](#data-visualization)
 
 
 
@@ -122,7 +122,7 @@ of the DAX epressions used in POWER BI during my analysis.
 ```
 
 
-### DATA VISUALIATION
+### DATA VISUALIZATION
 
 ![Screenshot (5)](https://github.com/user-attachments/assets/d3e3d688-f5a4-4f90-8728-6cecad0e2666)
 
@@ -140,6 +140,17 @@ of the DAX epressions used in POWER BI during my analysis.
 
 
 ![Screenshot (11)](https://github.com/user-attachments/assets/e8c033aa-cd27-4b24-9278-266c277af7b5)
+
+
+### RESULTS AND FINDINGS 
+After thoroughly analysing this dataset, I found the following things;
+- The top selling product is SHOES because it generated the most income in both years that was analysed
+- In terms of Regional performance;
+  1. SOUTH region generated the most sales
+  2. WEST region generated the least sales
+- For monthly sales trends;
+  1. In the year 2024, MAY generated in most sales in the year,while SEPTEMBER generated the least amount of sales
+  2. In the year 2023, we only have the dataset of 8 months with FEBRUARY making the most sales while JULY makes the least
 
 
 
